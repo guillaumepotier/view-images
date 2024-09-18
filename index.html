@@ -12,13 +12,13 @@
             <h2>
                 Paste an image URL into the box below, or use a URL fragment 
                 <br>
-                (like <small>https://gosoccerboy5.github.io/view-images/#http://example.com/image.png</small>)
+                (like <small>https://guillaumepotier.github.io/view-images/#http://example.com/image.png</small>)
             </h2>
             <input id="input" type="text" placeholder="Enter image URL" size="70">
             <button id="copy">Copy as URL</button>
             <br><br>
-            <a href="https://gosoccerboy5.github.io">Home</a> | This page is open source. 
-            <a href="https://github.com/gosoccerboy5/view-images/">Improve this page.</a>
+            <a href="https://guillaumepotier.github.io">Home</a> | This page is open source. 
+            <a href="https://github.com/guillaumepotier/view-images/">Improve this page.</a>
         </div>
 
         <div class="view" id="view">
@@ -35,7 +35,7 @@
             let param = getUrlVars()['url'];
             
             if (param !== undefined) {
-                window.location = "https://gosoccerboy5.github.io/view-images/#" + decodeURIComponent(param);
+                window.location = "https://guillaumepotier.github.io/view-images/#" + decodeURIComponent(param);
             }
             
             input.onkeyup = function(event) {
@@ -54,7 +54,7 @@
             
             button.addEventListener("click", function() {
                 let oldValue = input.value;
-                input.value = "https://gosoccerboy5.github.io/view-images/#" + oldValue;
+                input.value = "https://guillaumepotier.github.io/view-images/#" + oldValue;
                 input.select();
                 document.execCommand("copy");
                 input.value = oldValue;
